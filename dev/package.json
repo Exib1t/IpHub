@@ -1,0 +1,43 @@
+{
+  "name": "ideus-html-framework",
+  "version": "1.8.1",
+  "description": "Our HTML5 boilerplate",
+  "devDependencies": {
+    "@babel/core": "7.14.6",
+    "@babel/preset-env": "7.14.7",
+    "autoprefixer": "9.8.6",
+    "cssnano": "4.1.10",
+    "grunt": "1.5.2",
+    "grunt-babel": "8.0.0",
+    "grunt-concurrent": "3.0.0",
+    "grunt-contrib-clean": "2.0.0",
+    "grunt-contrib-concat": "1.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-imagemin": "4.0.0",
+    "grunt-contrib-jshint": "3.0.0",
+    "grunt-contrib-watch": "1.1.0",
+    "grunt-jscs": "3.0.1",
+    "grunt-postcss": "0.9.0",
+    "grunt-sass": "3.1.0",
+    "grunt-shell": "3.0.1",
+    "grunt-spritesmith": "6.9.0",
+    "grunt-terser": "2.0.0",
+    "jshint-stylish": "2.2.1",
+    "load-grunt-config": "3.0.1",
+    "node-sass": "7.0.0",
+    "pixrem": "5.0.0"
+  },
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "scripts": {
+    "start-dev": "call grunt dev && call grunt concurrent:dev",
+    "start": "call grunt && call grunt concurrent:main"
+  },
+  "author": {
+    "name": "iDeus",
+    "url": "https://github.com/ideus-team/html-framework"
+  }
+}

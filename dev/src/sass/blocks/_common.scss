@@ -1,0 +1,43 @@
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.l-html {
+
+}
+
+.l-body {
+  background: #fff;
+}
+
+
+/**
+ * @section wrapper
+ */
+.l-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: $site-width;
+  min-height: 100vh;
+}
+
+/**
+ * @section content
+ */
+.l-content {
+  position: relative;
+  flex: 1;
+}
+
+
+/**
+ * @section main
+ */
+.l-contentText {
+  position: relative;
+  display: block;
+}

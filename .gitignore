@@ -1,0 +1,10 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+error_log
+Thumbs.db
+.idea
+
+# Remove this before passing the layout to the PHP department!
+assets/css/*
+assets/img/*
+assets/js/scripts.js
