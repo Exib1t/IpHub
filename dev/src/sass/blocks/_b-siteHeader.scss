@@ -3,7 +3,18 @@
  */
 .l-siteHeader {
   position: relative;
+  background: $blackBg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .b-siteHeader {
-  @include clearfix;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1176px;
+  box-sizing: border-box;
+  padding: 20px 20px 21px 20px;
 }

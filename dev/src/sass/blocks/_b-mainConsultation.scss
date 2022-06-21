@@ -1,29 +1,26 @@
-/**
- * @section mainNavigation
- */
-.l-mainNavigation {
+.l-mainConsultation {
   width: max-content;
-  height: 100%;
+  height: max-content;
 }
-.b-mainNavigation {
+.b-mainConsultation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   margin: 0;
   padding: 0;
   height: 100%;
-  list-style: none;
 
-  &__item {
-    position: relative;
-    margin: 0;
+  &__number {
+    display: block;
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
     padding: 0;
-    height: 100%;
-
-    &.-state_active {
-
-    }
+    margin: 0;
   }
 
   &__link {
@@ -34,6 +31,8 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 160%;
-    color: $white;
+    color: $red;
+    padding: 0;
+    margin: 0;
   }
 }
