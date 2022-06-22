@@ -27,7 +27,6 @@
   }
 
   &__link {
-    @include hover-underline;
     display: block;
     font-family: $Montserrat;
     font-style: normal;
@@ -35,5 +34,12 @@
     font-size: 16px;
     line-height: 160%;
     color: $white;
+    text-decoration: none;
+    transition: all .2s ease;
+
+    &:hover {
+      color: $red;
+      transition: all .2s ease;
+    }
   }
 }

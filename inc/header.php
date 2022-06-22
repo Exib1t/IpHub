@@ -28,7 +28,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=STIX+Two+Text:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=STIX+Two+Text:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
 
   <!--<meta name="theme-color" content="#ed1c24" />-->
 
@@ -54,7 +54,7 @@
         <div class="l-mainConsultation">
           <div class="b-mainConsultation">
             <p class="b-mainConsultation__number">+7 (888) 888 88 88</p>
-            <a href="tel: +7 (888) 888 88 88" class="b-mainConsultation__link">Получить консультацию</a>
+            <a href="tel: 78888888888" class="b-mainConsultation__link">Получить консультацию</a>
           </div>
         </div>
 
