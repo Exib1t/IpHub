@@ -8,6 +8,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  overflow-x: hidden;
+
+  &.-overflowX-off {
+    overflow-x: unset;
+  }
 }
 .b-siteHeader {
   display: flex;
