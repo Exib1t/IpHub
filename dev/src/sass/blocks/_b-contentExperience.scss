@@ -1,0 +1,85 @@
+.b-contentExperience {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 164px 20px 0 20px;
+  margin: 0;
+  gap: 48px;
+
+  &__img {
+    display: block;
+    width: 100%;
+    max-width: 364px;
+  }
+
+  &__side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 804px;
+  }
+
+  &__sideTitle {
+    width: max-content;
+    margin: 0 0 16px 0;
+  }
+
+  &__sideText {
+    color: $gray;
+    margin: 0 0 50px 0;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    box-shadow: inset #DA4533 2px 2px;
+    height: 137px;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transition: .3s;
+    }
+  }
+
+  &__cardTitle {
+    font-family: $Stix;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    color: $white;
+    padding: 0;
+    margin: 0 0 5px 0;
+  }
+
+  &__cardText {
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $gray;
+    padding: 0;
+    margin: 0;
+  }
+}

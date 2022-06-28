@@ -2,6 +2,7 @@
 
 $(function() {
   hamburger();
+  sliderInit();
 });
 
 $(window).on('resize', function() {
@@ -42,4 +43,12 @@ function hamburger() {
       document.querySelector('.l-mainNavigation').classList.remove('-state-open');
     }
   };
+}
+
+function sliderInit() {
+  $('.js-slider').slick({
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  });
 }

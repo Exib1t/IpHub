@@ -1,0 +1,109 @@
+.b-btn {
+
+  &B {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    background: $red;
+    padding: 24px 20px 23px 20px;
+    border-radius: 50%;
+    position: relative;
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: $white;
+    margin: 0;
+
+    &:hover {
+      &::before {
+        box-shadow: $white 0 0 1px 1px;
+        transform: matrix(0.99, -0.11, 0.11, 0.99, 0, 0);
+        transition: all .6s ease;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      transition: all .6s ease;
+    }
+  }
+
+  &Adv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    background: none;
+    border: 1px solid $red;
+    padding: 9px 21px 12px 22px;
+    border-radius: 50%;
+    position: relative;
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: $red;
+    margin: 0;
+
+    &:hover {
+      &::after {
+        right: -18px;
+        transition: all .3s ease;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: -12px;
+      background-image: url('../../assets/img/blocks/button/arrow.svg');
+      background-repeat: no-repeat;
+      padding: 0;
+      margin: 0;
+      width: 30px;
+      height: 8px;
+      transition: all .3s ease;
+    }
+  }
+
+  &S {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 5px 13px 7px 13px;
+    border-radius: 50%;
+    margin: 0;
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: $red;
+    transition: .3s;
+
+    &:hover {
+      border: 1px solid $red;
+      transition: .3s;
+    }
+  }
+}

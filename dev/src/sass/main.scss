@@ -15,6 +15,7 @@
 
 /* Plugins */
 @import 'plugins/hamburgers/hamburgers';
+@import 'plugins/slick';
 
 
 /* ==|== primary styles =====================================================
@@ -28,6 +29,12 @@
 @import 'blocks/common';
 @import 'blocks/b-text';
 
+@import 'blocks/b-title';
+@import 'blocks/b-subTitle';
+@import 'blocks/b-btn';
+@import 'blocks/b-label';
+@import 'blocks/b-legend';
+
 @import 'blocks/b-siteHeader';
 @import 'blocks/b-siteLogo';
 @import 'blocks/b-siteSearch';
@@ -39,6 +46,9 @@
 @import 'blocks/b-mainConsultation';
 @import 'blocks/b-contentAbout';
 @import 'blocks/b-firstScreen';
+@import 'blocks/b-contentExperience';
+@import 'blocks/b-contentClient';
+@import 'blocks/b-contentSolutions';
 
 /**
  * Print styles

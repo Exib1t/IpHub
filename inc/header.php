@@ -53,8 +53,8 @@
 
         <div class="l-mainConsultation">
           <div class="b-mainConsultation">
-            <p class="b-mainConsultation__number">+7 (888) 888 88 88</p>
-            <a href="tel: 78888888888" class="b-mainConsultation__link">Получить консультацию</a>
+            <p class="b-mainConsultation__number b-subTitle__h1">+7 (888) 888 88 88</p>
+            <a href="tel: 78888888888" class="b-mainConsultation__link b-btnS">Получить консультацию</a>
           </div>
         </div>
 
@@ -67,13 +67,13 @@
         <nav class="l-mainNavigation">
           <ul class="b-mainNavigation">
             <li class="b-mainNavigation__item<?php echo ( $uri == 'services' ) ? ' -state_active' : ''; ?>">
-              <a class="b-mainNavigation__link" href="index.html">Услуги</a>
+              <a class="b-mainNavigation__link b-subTitle__h2" href="index.html">Услуги</a>
             </li>
             <li class="b-mainNavigation__item<?php echo ( $uri == 'cases' ) ? ' -state_active' : ''; ?>">
-              <a class="b-mainNavigation__link" href="index.html">Кейсы</a>
+              <a class="b-mainNavigation__link b-subTitle__h2" href="index.html">Кейсы</a>
             </li>
             <li class="b-mainNavigation__item<?php echo ( $uri == 'faq' ) ? ' -state_active' : ''; ?>">
-              <a class="b-mainNavigation__link" href="index.html">FAQ</a>
+              <a class="b-mainNavigation__link b-subTitle__h2" href="index.html">FAQ</a>
             </li>
           </ul>
         </nav>

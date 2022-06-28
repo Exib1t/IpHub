@@ -1,0 +1,24 @@
+.b-title {
+
+  &__h0 {
+    padding: 0;
+    margin: 0;
+    font-family: $Stix;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 135%;
+    color: $white;
+  }
+
+  &__h1 {
+    padding: 0;
+    margin: 0;
+    font-family: $Stix;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 135%;
+    color: $white;
+  }
+}

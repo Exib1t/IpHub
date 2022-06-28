@@ -11,7 +11,7 @@
   overflow-x: hidden;
 
   &.-overflowX-off {
-    overflow-x: unset;
+    overflow: visible;
   }
 }
 .b-siteHeader {
@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1176px;
+  max-width: 1256px;
   box-sizing: border-box;
   padding: 20px 20px 21px 20px;
 }
