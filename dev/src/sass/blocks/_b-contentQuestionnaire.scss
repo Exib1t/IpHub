@@ -1,0 +1,184 @@
+.l-contentQuestionnaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("../../assets/img/blocks/contentQuestionnaire/background.jpg");
+  background-repeat: no-repeat;
+}
+
+.b-contentQuestionnaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1256px;
+  box-sizing: border-box;
+  padding: 160px 20px;
+  margin: 0;
+
+  &__title {
+    padding: 0;
+    margin: 0 0 16px 0;
+  }
+
+  &__subtitle {
+    padding: 0;
+    margin: 0 0 50px 0;
+    opacity: 0.75;
+  }
+
+  &__formWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 0 0 50px 0;
+    background: $blackBg;
+    border-radius: 10px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    padding: 0;
+    margin: 0 0 36px 0;
+
+    label {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      box-sizing: border-box;
+      padding: 18px 20px;
+      margin: 0;
+      cursor: pointer;
+
+      &:hover {
+        .b-contentQuestionnaire__formText {
+          color: $red;
+          transition: .3s;
+        }
+      }
+
+      &.checked {
+        background: $red;
+        transition: .3s;
+
+        &:hover {
+          background: #9b3225;
+          transition: .3s;
+
+          .b-contentQuestionnaire__formText {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+  }
+
+  &__formRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 25px 0;
+  }
+
+  &__formTitle {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__formCounter {
+    font-family: $Stix;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    color: $white;
+
+    span {
+      color: $red;
+    }
+  }
+
+  &__formText {
+    transition: .3s;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__button {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0 0 25px 0;
+  }
+
+  &__bonuses {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 392px;
+    background: $blackBg;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    height: 131px;
+    gap: 20px;
+    cursor: pointer;
+
+    &:hover {
+      .b-contentQuestionnaire__cardText {
+        color: $red;
+        transition: .3s;
+      }
+
+      .b-contentQuestionnaire__cardImg {
+        path {
+          fill: white;
+          transition: .3s;
+        }
+      }
+    }
+  }
+
+  &__cardImg {
+    path {
+      transition: .3s;
+    }
+  }
+
+  &__cardText {
+    width: max-content;
+    transition: .3s;
+  }
+}

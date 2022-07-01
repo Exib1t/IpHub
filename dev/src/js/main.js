@@ -3,6 +3,7 @@
 $(function() {
   hamburger();
   sliderInit();
+  checkedGiver();
 });
 
 $(window).on('resize', function() {
@@ -47,8 +48,29 @@ function hamburger() {
 
 function sliderInit() {
   $('.js-slider').slick({
-    infinite: false,
+    infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    appendArrows: $('.js-arrows'),
+    prevArrow: `<button type="button" class="slick-prev"></button>`,
+    nextArrow: `<button type="button" class="slick-next "></button>`,
+  });
+}
+
+function checkedGiver() {
+  const radio = $('.b-contentQuestionnaire__formRadio');
+  const label = $('.b-contentQuestionnaire__label');
+  radio.each(function () {
+    if (this.checked === true) {
+      this.closest('.b-contentQuestionnaire__label').classList.add('checked');
+    } else {
+      this.closest('.b-contentQuestionnaire__label').classList.remove('checked');
+    }
+  });
+  label.each(function () {
+    this.addEventListener('mouseup', function (event) {
+      this.classList.toggle('checked');
+      console.log(event.target);
+    });
   });
 }
